@@ -1,7 +1,7 @@
 import React from "react";
 
-function MainDoyoung() {
+function Main() {
   return <>hello doyoung!</>;
 }
 
-export default MainDoyoung;
+export default Main;

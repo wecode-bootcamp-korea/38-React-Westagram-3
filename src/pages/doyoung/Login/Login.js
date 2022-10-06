@@ -1,7 +1,7 @@
 import React from "react";
 
-function LoginDoyoung() {
+function Login() {
   return <>hello doyoung!</>;
 }
 
-export default LoginDoyoung;
+export default Login;

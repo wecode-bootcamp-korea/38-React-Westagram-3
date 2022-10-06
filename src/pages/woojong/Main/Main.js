@@ -1,7 +1,7 @@
 import React from "react";
 
-function MainWoojong() {
-  return <>hello doyoung!</>;
+function Main() {
+  return <>asdaf</>;
 }
 
-export default MainWoojong;
+export default Main;

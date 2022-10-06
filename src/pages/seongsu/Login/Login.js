@@ -1,7 +1,7 @@
 import React from "react";
 
-function LoginSeongsu() {
+function Login() {
   return <>hello doyoung!</>;
 }
 
-export default LoginSeongsu;
+export default Login;

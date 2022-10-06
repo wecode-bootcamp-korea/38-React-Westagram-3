@@ -1,7 +1,7 @@
 import React from "react";
 
-function LoginWoojong() {
+function Login() {
   return <>hello doyoung!</>;
 }
 
-export default LoginWoojong;
+export default Login;

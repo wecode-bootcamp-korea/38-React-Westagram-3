@@ -1,7 +1,7 @@
 import React from "react";
 
-function MainYujin() {
+function Main() {
   return <>hello doyoung!</>;
 }
 
-export default MainYujin;
+export default Main;
