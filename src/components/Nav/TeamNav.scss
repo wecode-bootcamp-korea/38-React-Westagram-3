@@ -1,0 +1,25 @@
+.TeamNav {
+  border: 2px solid red;
+  width: 100%;
+  height: 10%;
+
+  .TeamNavTop {
+    display: flex;
+    justify-content: space-around;
+
+    .TeamNavTopItem {
+      border: 1px black solid;
+      padding: 5px;
+    }
+  }
+
+  .TeamNavBotton {
+    display: flex;
+    justify-content: space-around;
+
+    .TeamNavButton {
+      width: 300px;
+      border: green 1px solid;
+    }
+  }
+}
