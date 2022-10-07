@@ -9,7 +9,7 @@ const Main = () => {
           <a href="#" alt="https://www.instagram.com/">
             <img
               className="logo"
-              src="./images/instagram.png"
+              src="images/yujin/instagram.png"
               alt="instagramIcon"
             />
           </a>
@@ -17,7 +17,7 @@ const Main = () => {
         </div>
         <div className="search_container">
           <button className="search_button">
-            <i className="fa-solid fa-magnifying-glass"></i>
+            <i className="fa-solid fa-magnifying-glass" />
             <input className="search_box" placeholder="검색" type="text" />
           </button>
         </div>
@@ -25,17 +25,21 @@ const Main = () => {
           <a href="#" alt="https://www.instagram.com/explore">
             <img
               className="explore"
-              src="./images/explore.png"
+              src="images/yujin/explore.png"
               alt="exploreIcon"
             />
           </a>
           <a href="#" alt="https://www.instagram.com/activity">
-            <img className="heart" src="./images/heart.png" alt="heartIcon" />
+            <img
+              className="heart"
+              src="images/yujin/heart.png"
+              alt="heartIcon"
+            />
           </a>
           <a href="#" alt="https://www.instagram.com/profile">
             <img
               className="profile"
-              src="./images/profile.png"
+              src="images/yujin/profile.png"
               alt="profileIcon"
             />
           </a>
@@ -48,7 +52,10 @@ const Main = () => {
             <div className="post_profile">
               <div className="post_profile_left">
                 <div className="profile-img-box">
-                  <img className="post_profile_pic" src="./images/teddy.jpg" />
+                  <img
+                    className="post_profile_pic"
+                    src="images/yujin/teddy.jpg"
+                  />
                 </div>
                 <a href="#" className="post_profile_name">
                   <b>yuzinnee</b>
@@ -56,31 +63,34 @@ const Main = () => {
               </div>
               <div className="post_profile_dot_icon">
                 <a href="#">
-                  <i className="fa-solid fa-ellipsis"></i>
+                  <i className="fa-solid fa-ellipsis" />
                 </a>
               </div>
             </div>
             <img
               className="post_picture"
-              src="./images/newyork.jpg"
+              src="images/yujin//newyork.jpg"
               alt="pic"
             />
             <div className="feed_icon">
               <div className="feed_icon_left">
-                <img src="./images/heart.png" className="feed_icon_heart" />
-                <img src="./images/chat.png" className="feed_icon_chat" />
-                <img src="./images/direct.png" className="feed_icon_direct" />
+                <img src="images/yujin/heart.png" className="feed_icon_heart" />
+                <img src="images/yujin/chat.png" className="feed_icon_chat" />
+                <img
+                  src="images/yujin/direct.png"
+                  className="feed_icon_direct"
+                />
               </div>
               <div className="feed_icon_right">
                 <img
-                  src="./images/bookmark.png"
+                  src="images/yujin//bookmark.png"
                   className="feed_icon_bookmark"
                 />
               </div>
             </div>
             <div className="who_like">
               <div className="who_info">
-                <img className="who_pic" src="./images/teddy.jpg" />
+                <img className="who_pic" src="images/yujin//teddy.jpg" />
                 <a href="" className="who_name">
                   <b>yuzinnee</b>
                 </a>{' '}
@@ -104,10 +114,13 @@ const Main = () => {
                 </div>
               </div>
               <div className="comment_box_right">
-                <img className="comment_icon_like" src="./images/heart.png" />
+                <img
+                  className="comment_icon_like"
+                  src="images/yujin/heart.png"
+                />
               </div>
             </div>
-            <div className="comment_result"></div>
+            <div className="comment_result" />
             <div className="feed_comments_write">
               <input
                 className="feed_comments_write_box"
@@ -123,7 +136,7 @@ const Main = () => {
 
         <div className="main_right">
           <div className="account">
-            <img className="profile_pic" src="./images/teddy.jpg" />
+            <img className="profile_pic" src="images/yujin/teddy.jpg" />
             <div className="account_info">
               <a href="" className="account_name">
                 <b>yuzinnee</b>
@@ -142,7 +155,10 @@ const Main = () => {
             <div className="story_people">
               <div className="story_1">
                 <div className="story_line">
-                  <img className="story_pic" src="./images/profile_pic.png" />
+                  <img
+                    className="story_pic"
+                    src="images/yujin/profile_pic.png"
+                  />
                 </div>
                 <div className="story_info">
                   <a href="" className="story_name">
@@ -153,7 +169,10 @@ const Main = () => {
               </div>
               <div className="story_2">
                 <div className="story_line">
-                  <img className="story_pic" src="./images/profile_pic.png" />
+                  <img
+                    className="story_pic"
+                    src="images/yujin/profile_pic.png"
+                  />
                 </div>
                 <div className="story_info">
                   <a href="" className="story_name">
@@ -164,7 +183,10 @@ const Main = () => {
               </div>
               <div className="story_3">
                 <div className="story_line">
-                  <img className="story_pic" src="./images/profile_pic.png" />
+                  <img
+                    className="story_pic"
+                    src="images/yujin/profile_pic.png"
+                  />
                 </div>
                 <div className="story_info">
                   <a href="" className="story_name">
@@ -175,7 +197,10 @@ const Main = () => {
               </div>
               <div className="story_4">
                 <div className="story_line">
-                  <img className="story_pic" src="./images/profile_pic.png" />
+                  <img
+                    className="story_pic"
+                    src="images/yujin/profile_pic.png"
+                  />
                 </div>
                 <div className="story_info">
                   <a href="" className="story_name">
@@ -199,7 +224,7 @@ const Main = () => {
                 <div className="recommend_people_left">
                   <img
                     className="recommend_pic"
-                    src="./images/profile_pic.png"
+                    src="images/yujin//profile_pic.png"
                   />
                   <div className="recommend_info">
                     <a href="" className="recommend_name">
@@ -218,7 +243,7 @@ const Main = () => {
                 <div className="recommend_people_left">
                   <img
                     className="recommend_pic"
-                    src="./images/profile_pic.png"
+                    src="images/yujin//profile_pic.png"
                   />
                   <div className="recommend_info">
                     <a href="" className="recommend_name">
@@ -237,7 +262,7 @@ const Main = () => {
                 <div className="recommend_people_left">
                   <img
                     className="recommend_pic"
-                    src="./images/profile_pic.png"
+                    src="images/yujin//profile_pic.png"
                   />
                   <div className="recommend_info">
                     <a href="" className="recommend_name">
@@ -256,7 +281,7 @@ const Main = () => {
                 <div className="recommend_people_left">
                   <img
                     className="recommend_pic"
-                    src="./images/profile_pic.png"
+                    src="images/yujin//profile_pic.png"
                   />
                   <div className="recommend_info">
                     <a href="" className="recommend_name">
