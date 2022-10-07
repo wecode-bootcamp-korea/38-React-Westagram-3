@@ -15,7 +15,7 @@
   .contentsBox {
     @include flexSort(center, center);
     flex-direction: column;
-    border: red 1px solid;
+    border: rgb(226, 226, 226) 1px solid;
     padding: 50px;
     //Westagram 로고
     .Logo {
@@ -56,6 +56,25 @@
     .LoginButton:disabled {
       background-color: rgb(168, 202, 244);
       cursor: default;
+    }
+
+    //비밀번호 찾기 링크
+    .FindPw {
+      margin-top: 10px;
+      margin-bottom: 50px;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:link {
+        color: #0095f6;
+      }
+
+      &:visited {
+        color: #0095f6;
+      }
+      &:active {
+        color: #0095f6;
+      }
     }
   }
 }

@@ -11,7 +11,9 @@ function Login() {
         <input className="Input" />
         <input className="Input" />
         <button className="LoginButton">로그인</button>
-        <a href="https://www.youtube.com/">비번까먹?</a>
+        <a className="FindPw" href="https://www.youtube.com/">
+          비밀번호를 잊으셨나요?
+        </a>
       </div>
     </div>
   );
