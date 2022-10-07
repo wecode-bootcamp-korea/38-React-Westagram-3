@@ -12,7 +12,6 @@ import LoginYujin from './pages/yujin/Login/Login';
 function Router() {
   return (
     <BrowserRouter>
-      <TeamNav />
       <Routes>
         <Route path="/doyoung" element={<MainDoyoung />} />
         <Route path="/doyoung/login" element={<LoginDoyoung />} />

@@ -1,0 +1,61 @@
+//믹스인 모아둔것
+@mixin flexSort($justify, $alignItems) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $alignItems;
+}
+
+//로그인전체 프레임
+.Login {
+  @include flexSort(center, center);
+  width: 100%;
+  height: 100vh;
+  border: blue 2px solid;
+  //로그인페이지-컨텐츠박스
+  .contentsBox {
+    @include flexSort(center, center);
+    flex-direction: column;
+    border: red 1px solid;
+    padding: 50px;
+    //Westagram 로고
+    .Logo {
+      font-family: 'Satisfy', cursive;
+      width: 175px;
+      height: 51px;
+      font-size: 40px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    //id,pw인풋
+    .Input {
+      width: 250px;
+
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      background: rgba(var(--b3f, 250, 250, 250), 1);
+      border: gray 0.5px solid;
+    }
+    //로그인버튼
+    .LoginButton {
+      width: 261px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      background-color: #0095f6;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .LoginButton:disabled {
+      background-color: rgb(168, 202, 244);
+      cursor: default;
+    }
+  }
+}

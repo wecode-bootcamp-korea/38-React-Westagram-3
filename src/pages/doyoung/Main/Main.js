@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import '../Login/Login.scss';
 
 function Main() {
-  return <>도영 애드커밋푸시 연습</>;
+  return <>도영 메인</>;
 }
 
 export default Main;
