@@ -4,32 +4,36 @@ import { Link } from 'react-router-dom';
 
 function TeamNav() {
   const TeamMemberArray = [
-    { name: '성수', urlmain: '/seongsu', urllogin: '/seongsu/login' },
-    { name: '도영', urlmain: '/doyoung', urllogin: '/doyoung/login' },
-    { name: '유진', urlmain: 'yujin', urllogin: '/yujin/login' },
-    { name: '우종', urlmain: '/woojong', urllogin: '/woojong/login' },
+    { name: 'SeongSu', urlmain: '/seongsu', urllogin: '/seongsu/login' },
+    { name: 'DoYoung', urlmain: '/doyoung', urllogin: '/doyoung/login' },
+    { name: 'YuJin', urlmain: 'yujin', urllogin: '/yujin/login' },
+    { name: 'WooJong', urlmain: '/woojong', urllogin: '/woojong/login' },
   ];
 
   function TeamNavLoginButton() {
     return TeamMemberArray.map(person => (
-      <button>
-        <Link to={person.urllogin}>{person.name}메인</Link>
+      <button className="realButton">
+        <Link className="NavButtonLink" to={person.urllogin}>
+          {person.name}
+        </Link>
       </button>
     ));
   }
 
   function TeamNavMainButton() {
     return TeamMemberArray.map(person => (
-      <button>
-        <Link to={person.urlmain}>{person.name}메인</Link>
+      <button className="realButton">
+        <Link className="NavButtonLink" to={person.urlmain}>
+          {person.name}
+        </Link>
       </button>
     ));
   }
   return (
     <div className="TeamNav">
       <div className="TeamNavTop">
-        <span className="TeamNavTopItem">Login 페이지 바로가기</span>
-        <span className="TeamNavTopItem">Main 페이지 바로가기</span>
+        <span className="TeamNavTopItem">Login Page</span>
+        <span className="TeamNavTopItem">Main Page</span>
       </div>
       <div className="TeamNavBotton">
         <span>
