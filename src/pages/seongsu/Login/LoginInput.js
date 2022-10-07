@@ -8,7 +8,7 @@ function LoginInput() {
   const [loginAllow, setLoginAllow] = useState(false);
   const navigate = useNavigate();
 
-  function idValueChange(event) {
+  function SaveUserId(event) {
     setLoginValue(event.target.value);
     if (event.target.value.includes('@') && pwValue.length > 4) {
       setLoginAllow(true);
@@ -17,7 +17,7 @@ function LoginInput() {
     }
   }
 
-  function pwValueChange(event) {
+  function SaveUserPw(event) {
     setPwValue(event.target.value);
     if (loginValue.includes('@') && event.target.value.length > 5) {
       setLoginAllow(true);
@@ -36,7 +36,7 @@ function LoginInput() {
   return (
     <form onSubmit={onSubmit} id="loginForm">
       <input
-        onChange={idValueChange}
+        onChange={SaveUserId}
         value={loginValue}
         required
         className="inputbox"
@@ -44,7 +44,7 @@ function LoginInput() {
         placeholder="전화번호, 사용자 이름 또는 이메일"
       />
       <input
-        onChange={pwValueChange}
+        onChange={SaveUserPw}
         value={pwValue}
         required
         className="inputbox"

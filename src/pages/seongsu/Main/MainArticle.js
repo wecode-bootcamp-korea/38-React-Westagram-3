@@ -2,6 +2,7 @@ import { type } from '@testing-library/user-event/dist/type';
 import React from 'react';
 import { useState, useReducer } from 'react';
 import storyData from './storyData';
+import Comments from './Comments';
 
 function MainArticle() {
   const [commentsValue, setCommentsValue] = useState('');
@@ -84,24 +85,13 @@ function MainArticle() {
             <div>
               <ul id="commentlist">
                 {comments.map(el => (
-                  <li key={el.id}>
-                    <div>
-                      <span className="boldWeight">tjdtnxkrmfoa </span>
-                      <span> {el.text}</span>
-                    </div>
-                    <div>
-                      <span
-                        id={el.id}
-                        onClick={clickLike}
-                        className={el.like ? 'fullHeartSmall' : 'emptyHeart'}
-                      />
-                      <span
-                        id={el.id}
-                        onClick={clickDelete}
-                        className="removeBtn"
-                      />
-                    </div>
-                  </li>
+                  <Comments
+                    text={el.text}
+                    id={el.id}
+                    like={el.like}
+                    clickDelete={clickDelete}
+                    clickLike={clickLike}
+                  />
                 ))}
               </ul>
             </div>
