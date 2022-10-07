@@ -5,26 +5,30 @@ import { useNavigate } from 'react-router-dom';
 function LoginInput() {
   const [loginValue, setLoginValue] = useState('');
   const [pwValue, setPwValue] = useState('');
-  const [loginAllow, setLoginAllow] = useState('');
+  const [loginAllow, setLoginAllow] = useState(false);
   const navigate = useNavigate();
 
   function idValueChange(event) {
     setLoginValue(event.target.value);
-    if (loginValue.includes('@') && pwValue.length > 4) {
-      setLoginAllow('loginbtnallow');
+    if (event.target.value.includes('@') && pwValue.length > 4) {
+      setLoginAllow(true);
+    } else {
+      setLoginAllow(false);
     }
   }
 
   function pwValueChange(event) {
     setPwValue(event.target.value);
-    if (loginValue.includes('@') && pwValue.length > 4) {
-      setLoginAllow('loginbtnallow');
+    if (loginValue.includes('@') && event.target.value.length > 5) {
+      setLoginAllow(true);
+    } else {
+      setLoginAllow(false);
     }
   }
 
   function onSubmit(event) {
     event.preventDefault();
-    if (loginValue.includes('@') && pwValue.length > 4) {
+    if (loginAllow) {
       navigate('/main');
     }
   }
@@ -47,7 +51,9 @@ function LoginInput() {
         type="password"
         placeholder="비밀번호"
       />
-      <button className={`loginbtn ${loginAllow}`}>로그인</button>
+      <button className={loginAllow ? 'loginbtn loginbtnallow' : 'loginbtn'}>
+        로그인
+      </button>
     </form>
   );
 }

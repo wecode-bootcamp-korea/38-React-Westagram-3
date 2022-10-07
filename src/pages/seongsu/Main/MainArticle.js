@@ -32,6 +32,16 @@ function MainArticle() {
     setCommentsArr(comments);
   }
 
+  function clickLike(event) {
+    comments = comments.map(item => {
+      if (item.id == event.target.id) {
+        return { ...item, like: !item.like };
+      }
+      return item;
+    });
+    setCommentsArr(comments);
+  }
+
   return (
     <div className="mainAndAside">
       <main>
@@ -80,7 +90,11 @@ function MainArticle() {
                       <span> {el.text}</span>
                     </div>
                     <div>
-                      <span className="emptyHeart" />
+                      <span
+                        id={el.id}
+                        onClick={clickLike}
+                        className={el.like ? 'fullHeartSmall' : 'emptyHeart'}
+                      />
                       <span
                         id={el.id}
                         onClick={clickDelete}
@@ -109,4 +123,5 @@ function MainArticle() {
     </div>
   );
 }
+
 export default MainArticle;
