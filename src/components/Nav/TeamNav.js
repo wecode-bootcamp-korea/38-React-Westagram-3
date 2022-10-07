@@ -1,13 +1,30 @@
 import React from 'react';
 import './TeamNav.scss';
+import { Link } from 'react-router-dom';
 
 function TeamNav() {
-  const TeamMemberArray = ['도영', '유진', '성수', '우종'];
+  const TeamMemberArray = [
+    { name: '성수', urlmain: '/seongsu', urllogin: '/seongsu/login' },
+    { name: '도영', urlmain: '/doyoung', urllogin: '/doyoung/login' },
+    { name: '유진', urlmain: 'yujin', urllogin: '/yujin/login' },
+    { name: '우종', urlmain: '/woojong', urllogin: '/woojong/login' },
+  ];
 
-  function TeamNavButton() {
-    return TeamMemberArray.map(person => <button>{person}</button>);
+  function TeamNavLoginButton() {
+    return TeamMemberArray.map(person => (
+      <button>
+        <Link to={person.urllogin}>{person.name}메인</Link>
+      </button>
+    ));
   }
 
+  function TeamNavMainButton() {
+    return TeamMemberArray.map(person => (
+      <button>
+        <Link to={person.urlmain}>{person.name}메인</Link>
+      </button>
+    ));
+  }
   return (
     <div className="TeamNav">
       <div className="TeamNavTop">
@@ -16,10 +33,10 @@ function TeamNav() {
       </div>
       <div className="TeamNavBotton">
         <span>
-          <TeamNavButton className="TeamNavButton" />
+          <TeamNavLoginButton className="TeamNavButton" />
         </span>
         <span>
-          <TeamNavButton className="TeamNavButton" />
+          <TeamNavMainButton className="TeamNavButton" />
         </span>
       </div>
     </div>
