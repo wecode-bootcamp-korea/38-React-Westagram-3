@@ -12,10 +12,38 @@
 
   //Nav
   .Nav {
-    border: 2px orange solid;
     position: fixed;
     width: 100%;
     height: 60px; //Story의 마진탑과 같아야됨.
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+    border-bottom: rgb(187, 187, 187) 0.5px solid;
+
+    .NavLeft {
+      font-size: 35px;
+      font-family: 'Satisfy', cursive;
+      margin-right: 15px; //로고에 margin 준 이유 : nav에 space-around 속성 걸었는데, input창을 가운데로 두려고
+      margin-left: 15px;
+    }
+    .NavInput {
+      width: 200px;
+      height: 40px;
+      border: gray 0.5px solid;
+      border-radius: 4px;
+      background-color: ghostwhite;
+      padding-left: 100px;
+      font-size: 20px;
+    }
+    .NavRight {
+      .NavRightImg {
+        width: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
   }
 
   //MainWithoutNav
