@@ -1,7 +1,26 @@
 import React from 'react';
+import storyPhoto from '../../../assets/doyoung/storyPhoto.png';
 
 function Story() {
-  return <div className="Story">상단 스토리 입니다</div>;
+  function ComponentOfEachStory() {
+    return (
+      <div className="eachStory">
+        <img src={storyPhoto} className="storyPhoto" />
+        <div>_rianess</div>
+      </div>
+    );
+  }
+  return (
+    <div className="Story">
+      <ComponentOfEachStory />
+      <ComponentOfEachStory />
+      <ComponentOfEachStory />
+      <ComponentOfEachStory />
+      <ComponentOfEachStory />
+      <ComponentOfEachStory />
+      <ComponentOfEachStory />
+    </div>
+  );
 }
 
 export default Story;

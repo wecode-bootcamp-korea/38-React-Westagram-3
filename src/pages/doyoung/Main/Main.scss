@@ -4,11 +4,20 @@
   align-items: $alignItems;
 }
 
+@mixin backgroundColor {
+  background-color: rgba(243, 243, 243, 0.968);
+}
+
+@mixin mainLeftWidth {
+  width: 470px;
+}
+
 //메인 전체 컨테이너
 .Main {
   border: 3px black solid;
   margin-top: 50px; //상단 고정된 Team-Nav-Bar 때문에 마진 만들어준거임. 나중에 깔끔하게 Height에 맞게 맞추기.
   height: 100vh;
+  @include backgroundColor;
 
   //Nav
   .Nav {
@@ -21,13 +30,14 @@
     background-color: white;
     z-index: 1;
     border-bottom: rgb(187, 187, 187) 0.5px solid;
-
+    //NavLeft(텍스트로 위스타 로고)
     .NavLeft {
       font-size: 35px;
       font-family: 'Satisfy', cursive;
       margin-right: 15px; //로고에 margin 준 이유 : nav에 space-around 속성 걸었는데, input창을 가운데로 두려고
       margin-left: 15px;
     }
+    //NavInput
     .NavInput {
       width: 200px;
       height: 40px;
@@ -37,6 +47,7 @@
       padding-left: 100px;
       font-size: 20px;
     }
+    //NavRight
     .NavRight {
       .NavRightImg {
         width: 30px;
@@ -53,14 +64,31 @@
     display: flex;
     justify-content: center;
     padding-top: 30px;
+    @include backgroundColor;
+
     //MainLeft
     .MainLeft {
-      border: 2px solid red;
-      width: 470px;
+      border: none;
+      @include mainLeftWidth;
       height: 400px;
       //Story
       .Story {
-        border: 1px yellow solid;
+        border: rgb(227, 227, 227) 1px solid;
+        height: 100px;
+        border-radius: 7px;
+        margin-bottom: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        .eachStory {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .storyPhoto {
+            width: 66px;
+          }
+        }
       }
 
       //Feed
@@ -74,6 +102,7 @@
       width: 347px;
       height: 400px;
       border: 2px solid blue;
+
       //AsideTop
       .AsideTop {
         border: 1px blue solid;
