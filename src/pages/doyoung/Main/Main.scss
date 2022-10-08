@@ -16,7 +16,7 @@
 .Main {
   border: 3px black solid;
   margin-top: 50px; //상단 고정된 Team-Nav-Bar 때문에 마진 만들어준거임. 나중에 깔끔하게 Height에 맞게 맞추기.
-  height: 100vh;
+  height: 1500px;
   @include backgroundColor;
 
   //Nav
@@ -64,6 +64,7 @@
     display: flex;
     justify-content: center;
     padding-top: 30px;
+    height: 1300px;
     @include backgroundColor;
 
     //MainLeft
@@ -94,6 +95,38 @@
       //Feed
       .Feed {
         border: 1px green solid;
+        border-radius: 7px;
+        .IdBox {
+          height: 60px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: white;
+          border-radius: 7px;
+
+          .IdBoxLeft {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            .RianPhotoOnFeed {
+              width: 50px;
+            }
+
+            .rianIdArea {
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+          .dot3 {
+            width: 20px;
+            margin-right: 10px;
+          }
+        }
+        .PhotoBox {
+          width: 470px;
+          height: 470px;
+          border: 1px solid red;
+        }
       }
     }
 
