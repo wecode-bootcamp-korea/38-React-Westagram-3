@@ -1,6 +1,7 @@
 import React from 'react';
 import rian from '../../../assets/doyoung/rian.png';
 import dot3 from '../../../assets/doyoung/dot3.png';
+import cat from '../../../assets/doyoung/cat.png';
 
 function Feed() {
   function IdBox() {
@@ -14,10 +15,18 @@ function Feed() {
       </div>
     );
   }
+
+  function PhotoBox() {
+    return (
+      <div className="PhotoBox">
+        <img src={cat} className="cat" alt={cat} />
+      </div>
+    );
+  }
   return (
     <div className="Feed">
       <IdBox />
-      <div className="PhotoBox">사진</div>
+      <PhotoBox />
       <div className="LikeBox">좋아요 댓글 공유 저장</div>
       <div className="NumberOfLike">~명이 좋아합니다</div>
       <div className="discribeBox">게시자 아이디 내용</div>
