@@ -50,13 +50,24 @@ function Feed() {
       </div>
     );
   }
+
+  function NumberOfLike() {
+    return (
+      <div className="NumberOfLike">
+        kimdoyoung12345님 외 4,325,721명이 좋아합니다.
+      </div>
+    );
+  }
   return (
     <div className="Feed">
       <IdBox />
       <PhotoBox />
       <LikeBox />
-      <div className="NumberOfLike">~명이 좋아합니다</div>
-      <div className="discribeBox">게시자 아이디 내용</div>
+      <NumberOfLike />
+      <div className="discribeBox">
+        <span className="discribeBoxId">_rianess </span>
+        <span> 고양이사진~~!!!!!!!!!!! </span>
+      </div>
       <div className="CommentBox">컴포넌트할 댓글박스@@@</div>
       <div className="postedOneDayAgo">1일전 번역보기</div>
       <div className="InputAndButton">이모지 댓글인풋 게시버튼</div>

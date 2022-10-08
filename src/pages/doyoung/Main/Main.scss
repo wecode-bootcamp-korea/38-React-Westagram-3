@@ -137,11 +137,33 @@
           background-color: white;
           display: flex;
           justify-content: space-between;
-          padding-left: 14px;
-          padding-right: 14px;
-
+          padding-left: 4px;
+          padding-right: 2px;
+          padding-top: 5px;
+          padding-bottom: 6px;
           .feedIcon {
             width: 30px;
+            height: 30px;
+          }
+        }
+
+        //NumberOfLike
+        .NumberOfLike {
+          background-color: white;
+          font-size: 16px;
+          font-weight: 600;
+          padding-left: 4px;
+        }
+
+        //discribeBox
+        .discribeBox {
+          padding-top: 5px;
+          padding-left: 4px;
+          background-color: white;
+          padding-bottom: 7px;
+          padding-top: 5px;
+          .discribeBoxId {
+            font-weight: 900;
           }
         }
       }
