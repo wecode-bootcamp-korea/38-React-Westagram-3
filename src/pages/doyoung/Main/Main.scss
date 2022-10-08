@@ -132,6 +132,18 @@
             height: 469px;
           }
         }
+        //라이크박스
+        .LikeBox {
+          background-color: white;
+          display: flex;
+          justify-content: space-between;
+          padding-left: 14px;
+          padding-right: 14px;
+
+          .feedIcon {
+            width: 30px;
+          }
+        }
       }
     }
 
