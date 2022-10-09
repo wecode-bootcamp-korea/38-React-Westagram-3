@@ -1,5 +1,4 @@
 import React from 'react';
-import useState from 'react';
 import LoginInput from './LoginInput.js';
 import './Login.scss';
 
