@@ -192,8 +192,8 @@
           }
         }
 
-        //InputAndButton
-        .InputAndButton {
+        //inputLine
+        .inputLine {
           background-color: white;
           display: flex;
           align-items: center;
@@ -201,49 +201,50 @@
           padding-bottom: 10px;
           border: none;
           border-radius: 8px;
+
           .emoji {
             width: 40px;
             padding-left: 8px;
           }
 
-          //commentInput
-          .commentInput {
-            padding-left: 10px;
-            width: 380px;
-            font-size: 17px;
-            border: none;
-          }
+          .inputAndButtonForm {
+            .commentInput {
+              padding-left: 10px;
+              width: 380px;
+              font-size: 17px;
+              border: none;
+            }
+            .commentInput:focus {
+              outline: none;
+            }
 
-          .commentInput:focus {
-            outline: none;
-          }
-
-          .commentButton {
-            margin-right: 13px;
-            color: #0095f6;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            background-color: transparent;
-            border: none;
-            font-weight: 700;
-            font-size: 15px;
-            cursor: pointer;
-            margin-right: 0px;
-          }
-          .commentButton:disabled {
-            cursor: default;
-            margin-right: 13px;
-            color: #b1d7ef;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            background-color: transparent;
-            border: none;
-            font-weight: 700;
-            font-size: 15px;
-            cursor: default;
-            margin-right: 0px;
+            .commentButton {
+              margin-right: 13px;
+              color: #0095f6;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              background-color: transparent;
+              border: none;
+              font-weight: 700;
+              font-size: 15px;
+              cursor: pointer;
+              margin-right: 0px;
+            }
+            .commentButton:disabled {
+              cursor: default;
+              margin-right: 13px;
+              color: #b1d7ef;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              background-color: transparent;
+              border: none;
+              font-weight: 700;
+              font-size: 15px;
+              cursor: default;
+              margin-right: 0px;
+            }
           }
         }
       }

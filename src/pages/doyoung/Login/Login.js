@@ -22,18 +22,12 @@ function Login() {
   ///////////인풋값 바뀔때마다 밸리데이션 체크
   useEffect(() => {
     if (ValueOfIdInput.includes('@') && ValueOfPwInput.length > 4) {
-      ButtonToggle();
+      setButtonToggleState(false);
     } else {
       setButtonToggleState(true);
     }
     console.log(ValueOfIdInput);
   }, [ValueOfIdInput, ValueOfPwInput]);
-
-  //위에서 버튼 활성조건 만족한것 확인되면 버튼 활성화 함수 만들기
-  function ButtonToggle() {
-    console.log('버튼 활성화');
-    setButtonToggleState(false);
-  }
 
   //버튼누르면 메인으로 인도할 네비게이터 생성
   const navigate = useNavigate();
