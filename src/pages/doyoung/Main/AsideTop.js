@@ -1,6 +1,6 @@
 import React from 'react';
 
 function AsideTop() {
-  return <div className="AsideTop">메인라이트입니다</div>;
+  return <div className="AsideTop">어사이드 탑</div>;
 }
 export default AsideTop;

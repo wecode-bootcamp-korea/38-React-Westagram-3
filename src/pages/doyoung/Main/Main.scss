@@ -59,7 +59,7 @@
 
   //MainWithoutNav
   .MainWithoutNav {
-    border: 2px solid rgb(105, 243, 240);
+    border: none;
     margin-top: 60px; //내 Nav의 높이만큼 아래로 내려주기위해서 MainWithoutNav에다가 마진을 준거임.
     display: flex;
     justify-content: center;
@@ -171,6 +171,23 @@
         //CommentBox
         .CommentBox {
           padding-left: 6px;
+          .commentLine {
+            display: flex;
+            align-items: center;
+
+            //commentBoxId
+            .commentBoxId {
+              font-weight: 800;
+            }
+            //commentValue
+            .commentValue {
+              width: 280px;
+            }
+            //commentIMG
+            .commentIMG {
+              width: 20px;
+            }
+          }
         }
         //postedOneDayAgo
         .postedOneDayAgo {
