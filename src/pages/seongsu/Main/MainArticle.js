@@ -84,8 +84,9 @@ function MainArticle() {
             </div>
             <div>
               <ul id="commentlist">
-                {comments.map(el => (
+                {comments.map((el, index) => (
                   <Comments
+                    key={index}
                     text={el.text}
                     id={el.id}
                     like={el.like}

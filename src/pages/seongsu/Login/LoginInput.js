@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -10,32 +10,35 @@ function LoginInput() {
 
   function SaveUserId(event) {
     setLoginValue(event.target.value);
-    if (event.target.value.includes('@') && pwValue.length > 4) {
-      setLoginAllow(true);
-    } else {
-      setLoginAllow(false);
-    }
   }
 
   function SaveUserPw(event) {
     setPwValue(event.target.value);
-    if (loginValue.includes('@') && event.target.value.length > 5) {
+  }
+
+  useEffect(() => {
+    if (loginValue.includes('@') && pwValue.length > 5) {
       setLoginAllow(true);
     } else {
       setLoginAllow(false);
     }
-  }
+  }, [loginValue, pwValue]);
 
   function onSubmit(event) {
     event.preventDefault();
     if (loginAllow) {
-      navigate('/main');
+      navigate('/seongsu');
     }
   }
 
+  const loginRef = useRef();
+  useEffect(() => {
+    loginRef.current.focus();
+  }, []);
   return (
     <form onSubmit={onSubmit} id="loginForm">
       <input
+        ref={loginRef}
         onChange={SaveUserId}
         value={loginValue}
         required

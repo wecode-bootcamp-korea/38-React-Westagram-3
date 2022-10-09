@@ -1,10 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import userData from './userData';
 
 function MainHeader() {
   const [dropBar, setDropBar] = useState(false);
-
+  const navigate = useNavigate();
   function dropClick() {
     setDropBar(!dropBar);
   }
@@ -13,7 +14,9 @@ function MainHeader() {
   function search(event) {
     setSearchValue(event.target.value);
   }
-
+  function goLogin() {
+    navigate('/seongsu/login');
+  }
   return (
     <header className="header zindex">
       <div className="logosize">
@@ -73,7 +76,9 @@ function MainHeader() {
                   <a href="#">설정</a>
                 </li>
                 <li>
-                  <a href="./login.html">로그아웃</a>
+                  <a href="#" onClick={goLogin}>
+                    로그아웃
+                  </a>
                 </li>
               </ul>
             ) : null}

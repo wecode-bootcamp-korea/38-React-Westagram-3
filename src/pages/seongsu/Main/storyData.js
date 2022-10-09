@@ -8,7 +8,7 @@ const storyData = [
     id: 'velog',
   },
   {
-    img: 'https://play-lh.googleusercontent.com/6769rVaf-epw55Cm-ElyVT0zXFOjj-aW2CUVzYK16AR6nXKegZevfEye6Tzq5bw7HGw=w600-h300-pc0xffffff-pd',
+    img: 'https://play-lh.googleusercontent.com/QjufbM6EQZPbfNBvZQhjr0NtYSRg_5oeHUzmI5bzruHJBOuKd54WFrVXLv8L5rOO00U',
     id: 'notion',
   },
   {
