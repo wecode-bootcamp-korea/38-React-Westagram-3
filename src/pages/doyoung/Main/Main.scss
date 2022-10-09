@@ -116,6 +116,7 @@
             .rianIdArea {
               font-size: 18px;
               font-weight: 700;
+              padding-left: 9px;
             }
           }
           .dot3 {
@@ -231,8 +232,18 @@
             margin-right: 0px;
           }
           .commentButton:disabled {
-            color: rgb(178, 218, 236);
             cursor: default;
+            margin-right: 13px;
+            color: #b1d7ef;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: transparent;
+            border: none;
+            font-weight: 700;
+            font-size: 15px;
+            cursor: default;
+            margin-right: 0px;
           }
         }
       }

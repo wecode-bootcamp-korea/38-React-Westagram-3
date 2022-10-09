@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import rian from '../../../assets/doyoung/rian.png';
 import dot3 from '../../../assets/doyoung/dot3.png';
 import cat from '../../../assets/doyoung/cat.png';
@@ -7,8 +7,10 @@ import commentIcon from '../../../assets/doyoung/commentIcon.png';
 import dm from '../../../assets/doyoung/dm.png';
 import saveIcon from '../../../assets/doyoung/saveIcon.png';
 import emoji from '../../../assets/doyoung/emoji.png';
+import CommentBox from './CommentBox';
 
 function Feed() {
+  const [InputValue, setInputValue] = useState('');
   function IdBox() {
     return (
       <div className="IdBox">
@@ -20,7 +22,6 @@ function Feed() {
       </div>
     );
   }
-
   function PhotoBox() {
     return (
       <div className="PhotoBox">
@@ -28,7 +29,6 @@ function Feed() {
       </div>
     );
   }
-
   function LikeBox() {
     return (
       <div className="LikeBox">
@@ -51,7 +51,6 @@ function Feed() {
       </div>
     );
   }
-
   function DiscribeBox() {
     return (
       <div className="discribeBox">
@@ -60,30 +59,10 @@ function Feed() {
       </div>
     );
   }
-
   function NumberOfLike() {
     return (
       <div className="NumberOfLike">
         kimdoyoung12345님 외 4,325,721명이 좋아합니다.
-      </div>
-    );
-  }
-
-  function PostedOneDayAgo() {
-    return (
-      <div className="postedOneDayAgo">
-        <span className="left">1일전</span>
-        <span className="right">번역보기</span>
-      </div>
-    );
-  }
-
-  function InputAndButton() {
-    return (
-      <div className="InputAndButton">
-        <img src={emoji} alt={emoji} className="emoji" />
-        <input className="commentInput" />
-        <button className="commentButton">게시</button>
       </div>
     );
   }
@@ -94,9 +73,7 @@ function Feed() {
       <LikeBox />
       <NumberOfLike />
       <DiscribeBox />
-      <div className="CommentBox">kimdoyoung12345 컴포넌트할 댓글박스@@@</div>
-      <PostedOneDayAgo />
-      <InputAndButton />
+      <CommentBox />
     </div>
   );
 }
