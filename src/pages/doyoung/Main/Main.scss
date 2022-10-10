@@ -80,14 +80,18 @@
         margin-bottom: 17px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         background-color: white;
+
         .eachStory {
           display: flex;
           flex-direction: column;
           align-items: center;
           .storyPhoto {
-            width: 66px;
+            width: 60px;
+            height: 60px;
+
+            font-size: 14px;
           }
         }
       }
@@ -269,18 +273,108 @@
 
     //MainRight
     .MainRight {
-      width: 347px;
-      height: 400px;
-      border: 2px solid blue;
+      width: 350px;
+      height: 450px;
+      // border: 2px solid blue;
+      margin-left: 30px;
 
       //AsideTop
       .AsideTop {
-        border: 1px blue solid;
+        // border: 1px red solid;
+
+        .AsideTop1 {
+          display: flex;
+          align-items: center;
+          .mypic {
+            width: 60px;
+            margin-right: 20px;
+          }
+
+          .center {
+            width: 230px;
+            font-size: 16px;
+
+            .top {
+              font-weight: 700;
+              margin-bottom: 4px;
+            }
+            .bot {
+              color: gray;
+            }
+          }
+          .idSwitch {
+            color: #2d9ce1;
+            cursor: default;
+            font-weight: 700;
+            margin-right: 0px;
+            margin-left: 6px;
+            cursor: pointer;
+          }
+        }
+
+        .AsideTop2 {
+          display: flex;
+          justify-content: space-between;
+          font-size: 14px;
+          margin-top: 15px;
+          .top {
+            color: gray;
+            font-weight: 600;
+          }
+          .bot {
+            font-weight: 700;
+            cursor: pointer;
+          }
+        }
+
+        .RecommendBox {
+          margin-top: 10px;
+          .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            .rian {
+              width: 45px;
+              height: 45px;
+            }
+
+            .middle {
+              width: 230px;
+              font-size: 14px;
+              .name {
+                font-weight: 700;
+              }
+              .name2 {
+                color: gray;
+              }
+            }
+
+            .follow {
+              color: #2d9ce1;
+              cursor: pointer;
+              font-weight: 700;
+            }
+          }
+        }
       }
 
       //AsideBottom
       .AsideBottom {
-        border: 1px purple solid;
+        // border: 1px green solid;
+        .container {
+          padding: 10px;
+          font-weight: 400;
+          font-size: 14px;
+          .item {
+            color: rgb(180, 180, 180);
+            cursor: pointer;
+          }
+          .item:hover {
+            text-decoration-line: underline;
+          }
+        }
       }
     }
   }

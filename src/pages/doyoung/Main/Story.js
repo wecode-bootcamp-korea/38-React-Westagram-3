@@ -1,24 +1,18 @@
 import React from 'react';
-import storyPhoto from '../../../assets/doyoung/storyPhoto.png';
+import { storyConstData } from './storyConstDaTa';
+import './Main.scss';
 
 function Story() {
-  function ComponentOfEachStory() {
-    return (
-      <div className="eachStory">
-        <img src={storyPhoto} className="storyPhoto" />
-        <div>_rianess</div>
-      </div>
-    );
-  }
   return (
     <div className="Story">
-      <ComponentOfEachStory />
-      <ComponentOfEachStory />
-      <ComponentOfEachStory />
-      <ComponentOfEachStory />
-      <ComponentOfEachStory />
-      <ComponentOfEachStory />
-      <ComponentOfEachStory />
+      {storyConstData.map(item => {
+        return (
+          <div key={item.id} className="eachStory">
+            <img src={item.src} className="storyPhoto" />
+            <div>{item.userId}</div>
+          </div>
+        );
+      })}
     </div>
   );
 }

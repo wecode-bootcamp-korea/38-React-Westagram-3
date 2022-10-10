@@ -50,16 +50,32 @@ function CommentBox() {
             className="commentWhiteHeart commentIMG"
             src={whiteHeart}
           />
-          <img alt={xxx} className="commentxxx commentIMG" src={xxx} />
+          <img
+            alt={xxx}
+            className="commentxxx commentIMG"
+            src={xxx}
+            onClick={xxxclick}
+          />
         </span>
       </div>
     );
   }
+  //삭제기능을 만들자
+  function xxxclick(e) {
+    console.log('11');
+    e.target.display = Date.now();
+    console.log(e.target);
+  }
+
   return (
     <>
       <div className="CommentBox">
         {InputValueState.map(item => (
-          <CommentComponent comment={item.comment} writter={item.writter} />
+          <CommentComponent
+            key={item.id}
+            comment={item.comment}
+            writter={item.writter}
+          />
         ))}
       </div>
       <div className="postedOneDayAgo">
