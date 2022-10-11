@@ -6,3 +6,10 @@
 모유진
 박성수
 최우종
+
+TeamNav(팀 네비게이션 컴포넌트)
+
+최근 수정사항 :
+
+1. TeamNav.js 컴포넌트 분리함
+2. TeamMemberArray.map -> key추가
