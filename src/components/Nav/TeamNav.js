@@ -8,7 +8,7 @@ import TeamNavMainButton from './TeamNavMainButton';
 function TeamNav() {
   return (
     <>
-      <div />
+      <div className="space" />
       <div className="TeamNav">
         <div className="TeamNavTop">
           <span className="TeamNavTopItem">Login Page</span>
