@@ -1,5 +1,15 @@
-.loginContainer {
+* {
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+
+#fullBox {
+  width: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 150px;
+}
+
+.loginId {
 }

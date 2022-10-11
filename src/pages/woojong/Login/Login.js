@@ -1,17 +1,16 @@
-/*eslint disabled*/
-
 import React from 'react';
 
 function Login() {
-  <header Id="loginContainer">
-    <div Id="idInput">
-      <input onChange={} />
-    </div>
-    <div Id="pwInput">
-      <input onChange={} />
-    </div>
-  </header>;
-  return <></>;
+  return (
+    <header id="fullBox">
+      <main id="mainBox">
+        <hi id="titleName">Westagram</hi>
+        <input className="loginId" type="email" />
+        <input className="loginPw" type="password" />
+        <button className="loginBtn">로그인</button>
+      </main>
+    </header>
+  );
 }
 
 export default Login;

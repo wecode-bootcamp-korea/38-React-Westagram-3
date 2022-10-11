@@ -8,11 +8,8 @@ import LoginWoojong from './pages/woojong/Login/Login';
 import LoginDoyoung from './pages/doyoung/Login/Login';
 import LoginSeongsu from './pages/seongsu/Login/Login';
 import LoginYujin from './pages/yujin/Login/Login';
-<<<<<<< HEAD
-
-=======
 import TeamNav from './components/Nav/TeamNav.js';
->>>>>>> main
+
 function Router() {
   return (
     <BrowserRouter>
