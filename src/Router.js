@@ -8,7 +8,6 @@ import LoginWoojong from './pages/woojong/Login/Login';
 import LoginDoyoung from './pages/doyoung/Login/Login';
 import LoginSeongsu from './pages/seongsu/Login/Login';
 import LoginYujin from './pages/yujin/Login/Login';
-
 function Router() {
   return (
     <BrowserRouter>
