@@ -9,23 +9,27 @@ import saveIcon from '../../../assets/doyoung/saveIcon.png';
 import emoji from '../../../assets/doyoung/emoji.png';
 import CommentBox from './CommentBox';
 
-function Feed() {
+function Feed(props) {
   const [InputValue, setInputValue] = useState('');
   function IdBox() {
     return (
       <div className="IdBox">
         <div className="IdBoxLeft">
-          <img src={rian} className="RianPhotoOnFeed" alt={rian} />
-          <span className="rianIdArea">_rianess</span>
+          <img
+            src={props.profileImg}
+            className="profilePhotoOnFeed"
+            alt="profileImg"
+          />
+          <span className="IdArea">{props.accountId}</span>
         </div>
-        <img src={dot3} className="dot3" alt={rian} />
+        <img src={dot3} className="dot3" alt="dot3" />
       </div>
     );
   }
   function PhotoBox() {
     return (
       <div className="PhotoBox">
-        <img src={cat} className="cat" alt={cat} />
+        <img src={props.feedImg} className="feedImg" alt="feedImg" />
       </div>
     );
   }
@@ -54,15 +58,15 @@ function Feed() {
   function DiscribeBox() {
     return (
       <div className="discribeBox">
-        <span className="discribeBoxId">_rianess </span>
-        <span> 고양이사진~~!!!!!!!!!!! </span>
+        <span className="discribeBoxId"> {props.accountId} </span>
+        <span> {props.feedContentsText} </span>
       </div>
     );
   }
   function NumberOfLike() {
     return (
       <div className="NumberOfLike">
-        kimdoyoung12345님 외 4,325,721명이 좋아합니다.
+        {props.accountId}님 외 {props.likeNumber}명이 좋아합니다.
       </div>
     );
   }
@@ -73,7 +77,7 @@ function Feed() {
       <LikeBox />
       <NumberOfLike />
       <DiscribeBox />
-      <CommentBox />
+      <CommentBox postedTime={props.postedTime} />
     </div>
   );
 }

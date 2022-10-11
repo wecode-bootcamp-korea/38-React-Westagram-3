@@ -14,9 +14,10 @@
 
 //메인 전체 컨테이너
 .Main {
-  border: 3px black solid;
-  margin-top: 50px; //상단 고정된 Team-Nav-Bar 때문에 마진 만들어준거임. 나중에 깔끔하게 Height에 맞게 맞추기.
-  height: 1500px;
+  // border: 3px black solid;
+  // margin-top: 0px; //상단 고정된 Team-Nav-Bar 때문에 마진 만들어준거임. 나중에 깔끔하게 Height에 맞게 맞추기.
+  // height: 3000px;
+
   @include backgroundColor;
 
   //Nav
@@ -30,6 +31,7 @@
     background-color: white;
     z-index: 1;
     border-bottom: rgb(187, 187, 187) 0.5px solid;
+    top: 110px;
     //NavLeft(텍스트로 위스타 로고)
     .NavLeft {
       font-size: 35px;
@@ -60,11 +62,13 @@
   //MainWithoutNav
   .MainWithoutNav {
     border: none;
-    margin-top: 60px; //내 Nav의 높이만큼 아래로 내려주기위해서 MainWithoutNav에다가 마진을 준거임.
+    // margin-top: 0px; //내 Nav의 높이만큼 아래로 내려주기위해서 MainWithoutNav에다가 마진을 준거임.
     display: flex;
     justify-content: center;
-    padding-top: 30px;
-    height: 1300px;
+    padding-top: 80px;
+    // height: 1300px;
+    height: auto;
+
     @include backgroundColor;
 
     //MainLeft
@@ -101,6 +105,7 @@
         border: 1px rgb(219, 219, 219) solid;
         border-radius: 7px;
         background-color: white;
+        margin-bottom: 40px;
         .IdBox {
           height: 60px;
           display: flex;
@@ -113,11 +118,13 @@
             display: flex;
             align-items: center;
             margin-left: 10px;
-            .RianPhotoOnFeed {
+            .profilePhotoOnFeed {
               width: 50px;
+              height: 50px;
+              border-radius: 30px;
             }
 
-            .rianIdArea {
+            .IdArea {
               font-size: 18px;
               font-weight: 700;
               padding-left: 9px;
@@ -133,7 +140,7 @@
           width: 470px;
           height: 470px;
 
-          .cat {
+          .feedImg {
             width: 469px;
             height: 469px;
           }

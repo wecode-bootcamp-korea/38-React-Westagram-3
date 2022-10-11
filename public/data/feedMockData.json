@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "profileImg": "http://m.grfarm.co.kr/web/product/medium/202204/c3b1939cd60caed066f428a4dfcc1d1f.jpg",
+    "accountId": "wecode123",
+    "feedImg": "http://image.dongascience.com/Photo/2020/03/5bddba7b6574b95d37b6079c199d7101.jpg",
+    "likeNumber": "3,123,955",
+    "feedContentsText": "강아지",
+    "postedTime": "1"
+  },
+  {
+    "id": 2,
+    "profileImg": "https://mblogthumb-phinf.pstatic.net/MjAxODAxMDNfNDAg/MDAxNTE0OTYyNTA5NjU0.u5cU9gnAdMHK4uAmf54gNGbKZig0WoIiCKAD2qCaDf0g.yzxNuwFxteMsF9wX7Q0M4QqucBCF6INyczLsjoKyCDwg.JPEG.yg11398/0.jpg?type=w800",
+    "accountId": "LionKing123",
+    "feedImg": "https://cdn.pixabay.com/photo/2014/11/20/12/51/deer-539038__480.jpg",
+    "likeNumber": "643,113",
+    "feedContentsText": "사슴 사진 찍음ㄷㄷ",
+    "postedTime": "3"
+  },
+  {
+    "id": 3,
+    "profileImg": "https://www.sciencetimes.co.kr/wp-content/uploads/2017/09/1_%EC%9C%A0%EB%9F%BD%ED%86%A0%EB%81%BC.jpg",
+    "accountId": "rabbit111",
+    "feedImg": "https://www.bhg.com/thmb/IUuzkuStSl_FqL1GMvFTdmW6KA0=/1244x933/smart/filters:no_upscale()/static.onecms.io__wp-content__uploads__sites__37__2020__04__30__carrots-106dce5c-74aa64b81c184bffb80b7381b72615a1.jpg",
+    "likeNumber": "3,955",
+    "feedContentsText": "당근당근~~",
+    "postedTime": "2"
+  },
+  {
+    "id": 4,
+    "profileImg": "http://www.chemicalnews.co.kr/news/photo/202106/3636_10174_4958.jpg",
+    "accountId": "cat11cute",
+    "feedImg": "http://imagescdn.gettyimagesbank.com/500/202111/jv12508602.jpg",
+    "likeNumber": "9,223,117",
+    "feedContentsText": "고양고양고양이",
+    "postedTime": "5"
+  }
+]

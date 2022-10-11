@@ -4,7 +4,7 @@ import emoji from '../../../assets/doyoung/emoji.png';
 import whiteHeart from '../../../assets/doyoung/whiteHeart.png';
 import xxx from '../../../assets/doyoung/xxx.png';
 
-function CommentBox() {
+function CommentBox(props) {
   //순서대로 : 버튼 활성/비활성에 넣을 스테이트 ,  현재 인풋창에 타이핑된 값 스테이트화 , 댓글submit시 객체형태로 정보저장할 스테이트
   const [ButtonBoolean, setButtonBoolean] = useState(true);
   const [TypedValue, setTypedValue] = useState('');
@@ -79,7 +79,7 @@ function CommentBox() {
         ))}
       </div>
       <div className="postedOneDayAgo">
-        <span className="left">1일전</span>
+        <span className="left">{props.postedTime}일전</span>
         <span className="right">번역보기</span>
       </div>
       <div className="inputLine">

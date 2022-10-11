@@ -7,7 +7,11 @@ function AsideBottom() {
       <div className="container">
         {' '}
         {asideBottomConstData.map(item => {
-          return <span className="item">{item.item}. </span>;
+          return (
+            <span key={item.id} className="item">
+              {item.item}.{' '}
+            </span>
+          );
         })}
       </div>
     </div>
