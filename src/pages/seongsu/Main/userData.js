@@ -1,3 +1,3 @@
-let userData = ['asdmasdp', 'asdzxczcx', 'tjdtnxkrmfoa', 'wecode', 'justcode'];
+let USER_DATA = ['asdmasdp', 'asdzxczcx', 'tjdtnxkrmfoa', 'wecode', 'justcode'];
 
-export default userData;
+export default USER_DATA;

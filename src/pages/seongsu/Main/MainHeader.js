@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import userData from './userData';
+import USER_DATA from './userData';
 
 function MainHeader() {
   const [dropBar, setDropBar] = useState(false);
@@ -28,22 +28,20 @@ function MainHeader() {
         placeholder="검색"
       />
       <ul id="searchBar">
-        {userData
-          .filter(x => {
-            if (searchValue == '') {
-              return false;
-            } else if (x.includes(searchValue)) {
-              return x;
-            }
-          })
-          .map((x, i) => (
-            <li key={i}>
-              <div>
-                <span className="userImg" />
-                <span>{x}</span>
-              </div>
-            </li>
-          ))}
+        {USER_DATA.filter(x => {
+          if (searchValue == '') {
+            return false;
+          } else if (x.includes(searchValue)) {
+            return x;
+          }
+        }).map((x, i) => (
+          <li key={i}>
+            <div>
+              <span className="userImg" />
+              <span>{x}</span>
+            </div>
+          </li>
+        ))}
       </ul>
 
       <ul id="itembox">

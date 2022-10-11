@@ -1,0 +1,26 @@
+[
+  {
+    "username": "HasdmmPq",
+    "id": 1,
+    "user_img": "https://cdn.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_960_720.jpg",
+    "article_photo_url": "https://media.istockphoto.com/photos/flowe-picture-id831533806?s=612x612",
+    "article_content": "하이하이",
+    "likecount": 63
+  },
+  {
+    "username": "HolyWater",
+    "id": 2,
+    "user_img": "https://cdn.pixabay.com/photo/2017/11/06/13/45/cap-2923682_960_720.jpg",
+    "article_photo_url": "https://cdn.pixabay.com/photo/2019/06/05/08/37/dog-4253238_960_720.jpg",
+    "article_content": "안녕하세요",
+    "likecount": 72
+  },
+  {
+    "username": "HaoaoaoQQ",
+    "id": 3,
+    "user_img": "https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_960_720.jpg",
+    "article_photo_url": "https://cdn.pixabay.com/photo/2022/09/16/18/09/bird-7459335_960_720.jpg",
+    "article_content": "Good Bye",
+    "likecount": 46
+  }
+]
