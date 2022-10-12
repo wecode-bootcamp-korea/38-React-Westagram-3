@@ -4,11 +4,13 @@ import USER_DATA from './userData';
 
 function MainHeader() {
   const [dropBar, setDropBar] = useState(false);
+  const [searchValue, setSearchValue] = useState('');
+
   const navigate = useNavigate();
+
   function dropClick() {
     setDropBar(!dropBar);
   }
-  const [searchValue, setSearchValue] = useState('');
 
   function search(event) {
     setSearchValue(event.target.value);
@@ -16,6 +18,15 @@ function MainHeader() {
   function goLogin() {
     navigate('/seongsu/login');
   }
+
+  const filtered = USER_DATA.filter(x => {
+    if (searchValue == '') {
+      return false;
+    } else if (x.includes(searchValue)) {
+      return x;
+    }
+  });
+
   return (
     <header className="header zindex">
       <div className="logosize">
@@ -28,13 +39,7 @@ function MainHeader() {
         placeholder="검색"
       />
       <ul id="searchBar">
-        {USER_DATA.filter(x => {
-          if (searchValue == '') {
-            return false;
-          } else if (x.includes(searchValue)) {
-            return x;
-          }
-        }).map((x, i) => (
+        {filtered.map((x, i) => (
           <li key={i}>
             <div>
               <span className="userImg" />

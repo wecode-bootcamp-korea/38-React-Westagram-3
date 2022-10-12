@@ -9,17 +9,6 @@ function MainArticle() {
       .then(result => setStoryData(result));
   }, []);
 
-  console.log(storyData);
-
-  //밑에 꺼랑 뭐가다를까?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!!?!?!?!?!?!?!?!!?!?
-  // const getData = async () => {
-  //   const data = await (await fetch('/data/storyData.json')).json();
-  //   setStoryData(data);
-  // };
-  // useEffect(() => {
-  //   getData();
-  // }, []);
-
   return (
     <div>
       <div className="mainAndAside">

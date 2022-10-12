@@ -5,7 +5,7 @@ import './Login.scss';
 function Login() {
   return (
     <div id="loginpage">
-      <div id="advertise"></div>
+      <div id="advertise" />
       <div>
         <div id="loginbox">
           <h1>Seongsutagram</h1>

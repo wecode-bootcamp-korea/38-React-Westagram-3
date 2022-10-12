@@ -4,14 +4,6 @@ import FeedComment from './FeedContent';
 
 function Feed() {
   const [feedData, setFeedData] = useState(null);
-  // const getFeedData = async () => {
-  //   const data = await (await fetch('/data/feedData.json')).json();
-  //   setFeedData(data);
-  // };
-
-  // useEffect(() => {
-  //   getFeedData();
-  // }, []);
 
   useEffect(() => {
     fetch('/data/feedData.json')

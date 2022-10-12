@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function LoginInput() {
@@ -6,22 +6,25 @@ function LoginInput() {
   const [pwValue, setPwValue] = useState('');
   const [loginAllow, setLoginAllow] = useState(false);
   const navigate = useNavigate();
+  const loginRef = useRef();
 
   function SaveUserId(event) {
     setLoginValue(event.target.value);
-  }
-
-  function SaveUserPw(event) {
-    setPwValue(event.target.value);
-  }
-
-  useEffect(() => {
-    if (loginValue.includes('@') && pwValue.length > 5) {
+    if (event.target.value.includes('@') && pwValue.length > 5) {
       setLoginAllow(true);
     } else {
       setLoginAllow(false);
     }
-  }, [loginValue, pwValue]);
+  }
+
+  function SaveUserPw(event) {
+    setPwValue(event.target.value);
+    if (loginValue.includes('@') && event.target.value.length > 5) {
+      setLoginAllow(true);
+    } else {
+      setLoginAllow(false);
+    }
+  }
 
   function onSubmit(event) {
     event.preventDefault();
@@ -30,10 +33,6 @@ function LoginInput() {
     }
   }
 
-  const loginRef = useRef();
-  useEffect(() => {
-    loginRef.current.focus();
-  }, []);
   return (
     <form onSubmit={onSubmit} id="loginForm">
       <input
