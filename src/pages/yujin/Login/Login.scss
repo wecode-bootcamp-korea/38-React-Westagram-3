@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 .login {
   body {
     width: 100%;
@@ -22,6 +24,7 @@
   .logo {
     font-size: 51px;
     font-family: 'Lobster', cursive;
+    margin-bottom: 30px;
   }
 
   .login_container input {

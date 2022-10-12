@@ -58,7 +58,7 @@ const Main = () => {
                   />
                 </div>
                 <a href="#" className="post_profile_name">
-                  <b>yuzinnee</b>
+                  <b className="makeIdBold">yuzinnee</b>
                 </a>
               </div>
               <div className="post_profile_dot_icon">
@@ -92,14 +92,14 @@ const Main = () => {
               <div className="who_info">
                 <img className="who_pic" src="images/yujin//teddy.jpg" />
                 <a href="" className="who_name">
-                  <b>yuzinnee</b>
+                  <b className="makeIdBold">yuzinnee</b>
                 </a>{' '}
-                님 외<b>7,096,816명</b>이 좋아합니다
+                님 외<b className="makeIdBold">7,096,816명</b>이 좋아합니다
               </div>
             </div>
             <div className="feed_content">
               <a href="" className="writer_name">
-                <b>yuzinnee</b>
+                <b className="makeIdBold">yuzinnee</b>
               </a>{' '}
               가보고 싶은 뉴욕 🤩 여행 가게 된다면...
               <button className="more_see">더 보기</button>
@@ -128,7 +128,7 @@ const Main = () => {
                 type="text"
               />
               <button className="comment_upload">
-                <b>게시</b>
+                <b className="makeIdBold">게시</b>
               </button>
             </div>
           </article>
@@ -139,7 +139,7 @@ const Main = () => {
             <img className="profile_pic" src="images/yujin/teddy.jpg" />
             <div className="account_info">
               <a href="" className="account_name">
-                <b>yuzinnee</b>
+                <b className="makeIdBold">yuzinnee</b>
               </a>
               <span className="info">yuzinnee | 유진</span>
             </div>
@@ -149,7 +149,7 @@ const Main = () => {
             <div className="story_bar">
               <div className="story_text">스토리</div>
               <a href="#" className="story_all_see">
-                <b>모두 보기</b>
+                <b className="makeIdBold">모두 보기</b>
               </a>
             </div>
             <div className="story_people">
@@ -162,7 +162,7 @@ const Main = () => {
                 </div>
                 <div className="story_info">
                   <a href="" className="story_name">
-                    <b>this_is_westa</b>
+                    <b className="makeIdBold">this_is_westa</b>
                   </a>
                   <span className="time">38분 전</span>
                 </div>
@@ -176,7 +176,7 @@ const Main = () => {
                 </div>
                 <div className="story_info">
                   <a href="" className="story_name">
-                    <b>hello_i_am_yj</b>
+                    <b className="makeIdBold">hello_i_am_yj</b>
                   </a>
                   <span className="time">5분 전</span>
                 </div>
@@ -190,7 +190,7 @@ const Main = () => {
                 </div>
                 <div className="story_info">
                   <a href="" className="story_name">
-                    <b>what_a_lovely_day</b>
+                    <b className="makeIdBold">what_a_lovely_day</b>
                   </a>
                   <span className="time">2시간 전</span>
                 </div>
@@ -204,7 +204,7 @@ const Main = () => {
                 </div>
                 <div className="story_info">
                   <a href="" className="story_name">
-                    <b>get_set_go</b>
+                    <b className="makeIdBold">get_set_go</b>
                   </a>
                   <span className="time">12분 전</span>
                 </div>
@@ -216,7 +216,7 @@ const Main = () => {
             <div className="recommend_bar">
               <div className="recommend_text">회원님을 위한 추천</div>
               <a href="#" className="recommend_all_see">
-                <b>모두 보기</b>
+                <b className="makeIdBold">모두 보기</b>
               </a>
             </div>
             <div className="recommend_people">
@@ -228,14 +228,14 @@ const Main = () => {
                   />
                   <div className="recommend_info">
                     <a href="" className="recommend_name">
-                      <b>who_are_u</b>
+                      <b className="makeIdBold">who_are_u</b>
                     </a>
                     <span className="relation">get_set_go님 외 2명이 ...</span>
                   </div>
                 </div>
                 <div className="recommend_people_right">
                   <a href="#" className="follow">
-                    <b>팔로우</b>
+                    <b className="makeIdBold">팔로우</b>
                   </a>
                 </div>
               </div>
@@ -247,14 +247,14 @@ const Main = () => {
                   />
                   <div className="recommend_info">
                     <a href="" className="recommend_name">
-                      <b>im_a_developer</b>
+                      <b className="makeIdBold">im_a_developer</b>
                     </a>
                     <span className="relation">we_coder님 외 1명이 ...</span>
                   </div>
                 </div>
                 <div className="recommend_people_right">
                   <a href="#" className="follow">
-                    <b>팔로우</b>
+                    <b className="makeIdBold">팔로우</b>
                   </a>
                 </div>
               </div>
@@ -266,14 +266,14 @@ const Main = () => {
                   />
                   <div className="recommend_info">
                     <a href="" className="recommend_name">
-                      <b>front_end</b>
+                      <b className="makeIdBold">front_end</b>
                     </a>
                     <span className="relation">dong_won님 외 3명이 ...</span>
                   </div>
                 </div>
                 <div className="recommend_people_right">
                   <a href="#" className="follow">
-                    <b>팔로우</b>
+                    <b className="makeIdBold">팔로우</b>
                   </a>
                 </div>
               </div>
@@ -285,14 +285,14 @@ const Main = () => {
                   />
                   <div className="recommend_info">
                     <a href="" className="recommend_name">
-                      <b>nice_to_meet_u</b>
+                      <b className="makeIdBold">nice_to_meet_u</b>
                     </a>
                     <span className="relation">woo_seong님 외 5명이 ...</span>
                   </div>
                 </div>
                 <div className="recommend_people_right">
                   <a href="#" className="follow">
-                    <b>팔로우</b>
+                    <b className="makeIdBold">팔로우</b>
                   </a>
                 </div>
               </div>
