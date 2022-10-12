@@ -1,6 +1,6 @@
 import React from 'react';
 
-let recommendData = [
+let RECOMMEND_DATA = [
   {
     id: 'Sonny123',
     img: 'https://image.shutterstock.com/image-photo/handsome-unshaven-young-darkskinned-male-600w-640011838.jpg',
@@ -34,7 +34,7 @@ function MainAside() {
           <span className="fontSmall">모두보기</span>
         </div>
         <ul>
-          {recommendData.map((item, index) => (
+          {RECOMMEND_DATA.map((item, index) => (
             <li key={index} className="recommenduser">
               <img className="recommendIcon" src={item.img} />
               <div>
