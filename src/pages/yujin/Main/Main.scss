@@ -6,7 +6,6 @@
 
 body {
   width: 100%;
-  height: 100vw;
   background-color: #fafafa;
   margin: 0;
 }
@@ -27,6 +26,7 @@ body {
   margin-top: 0px;
   display: flex;
   justify-content: space-between;
+  z-index: 999;
 }
 
 .icon_left {
