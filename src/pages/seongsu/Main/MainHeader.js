@@ -15,6 +15,7 @@ function MainHeader() {
   function search(event) {
     setSearchValue(event.target.value);
   }
+
   function goLogin() {
     navigate('/seongsu/login');
   }

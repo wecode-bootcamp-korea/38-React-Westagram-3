@@ -3,6 +3,7 @@ import Feed from './Feed';
 
 function MainArticle() {
   const [storyData, setStoryData] = useState(null);
+
   useEffect(() => {
     fetch('/data/storyData.json')
       .then(res => res.json())
