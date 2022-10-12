@@ -20,10 +20,6 @@ function Main() {
       });
   }, []);
 
-  //테스트용
-  // function test123() {
-  //   console.log(feedMockDataState);
-  // }
   return (
     <div className="Main">
       <Nav />

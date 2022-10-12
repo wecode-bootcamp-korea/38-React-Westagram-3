@@ -67,7 +67,6 @@
     justify-content: center;
     padding-top: 80px;
     // height: 1300px;
-    height: auto;
 
     @include backgroundColor;
 
@@ -75,7 +74,7 @@
     .MainLeft {
       border: none;
       @include mainLeftWidth;
-      height: 400px;
+
       //Story
       .Story {
         border: rgb(227, 227, 227) 1px solid;

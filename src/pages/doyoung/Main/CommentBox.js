@@ -16,7 +16,6 @@ function CommentBox(props) {
   }
   //5자 이상이면 버튼활성화
   useEffect(() => {
-    console.log(TypedValue);
     if (TypedValue.length >= '1') {
       setButtonBoolean(false);
     } else {
