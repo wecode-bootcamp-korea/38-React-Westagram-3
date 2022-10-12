@@ -1,3 +1,6 @@
+.space {
+  height: 120px;
+}
 .TeamNav {
   background-color: white;
   border-bottom: rgb(188, 188, 188) 0.4px solid;
@@ -6,6 +9,7 @@
   position: fixed;
   top: 0;
   z-index: 1;
+
 
   .TeamNavTop {
     display: flex;
