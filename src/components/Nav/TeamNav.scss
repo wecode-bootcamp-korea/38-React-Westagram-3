@@ -8,10 +8,11 @@
   height: 110px;
   position: fixed;
   top: 0;
+  z-index: 1;
 
   .TeamNavTop {
     display: flex;
-    justify-content: space-around;
+    justify-content: sgpace-around;
     height: 70px;
     .TeamNavTopItem {
       // border: 1px black solid;

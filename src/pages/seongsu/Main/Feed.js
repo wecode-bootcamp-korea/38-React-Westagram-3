@@ -7,12 +7,12 @@ function Feed() {
   // const getFeedData = async () => {
   //   const data = await (await fetch('/data/feedData.json')).json();
   //   setFeedData(data);
-  //   console.log(feedData);
   // };
 
   // useEffect(() => {
   //   getFeedData();
   // }, []);
+
   useEffect(() => {
     fetch('/data/feedData.json')
       .then(res => res.json())
@@ -21,17 +21,16 @@ function Feed() {
 
   return (
     <>
-      {feedData &&
-        feedData.map(item => (
-          <FeedComment
-            key={item.id}
-            userName={item.username}
-            userImg={item.user_img}
-            articlePhoto={item.article_photo_url}
-            content={item.article_content}
-            like={item.likecount}
-          />
-        ))}
+      {feedData?.map(item => (
+        <FeedComment
+          key={item.id}
+          userName={item.username}
+          userImg={item.user_img}
+          articlePhoto={item.article_photo_url}
+          content={item.article_content}
+          like={item.likecount}
+        />
+      ))}
     </>
   );
 }
