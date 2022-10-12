@@ -3,10 +3,8 @@
     "id": 1,
     "profileImg": "http://m.grfarm.co.kr/web/product/medium/202204/c3b1939cd60caed066f428a4dfcc1d1f.jpg",
     "accountId": "wec11ode123",
-    "feedImg": [
-      "http://image.dongascience.com/Photo/2020/03/5bddba7b6574b95d37b6079c199d7101.jpg",
-      ""
-    ],
+    "feedImg": "http://image.dongascience.com/Photo/2020/03/5bddba7b6574b95d37b6079c199d7101.jpg",
+
     "likeNumber": "3,123,955",
     "feedContentsText": "강아지",
     "postedTime": "1"
