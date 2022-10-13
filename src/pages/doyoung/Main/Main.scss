@@ -1,0 +1,387 @@
+@mixin flexSort($justify, $alignItems) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $alignItems;
+}
+
+@mixin backgroundColor {
+  background-color: rgba(243, 243, 243, 0.968);
+}
+
+@mixin mainLeftWidth {
+  width: 470px;
+}
+
+//메인 전체 컨테이너
+.Main {
+  // border: 3px black solid;
+  // margin-top: 0px; //상단 고정된 Team-Nav-Bar 때문에 마진 만들어준거임. 나중에 깔끔하게 Height에 맞게 맞추기.
+  // height: 3000px;
+
+  @include backgroundColor;
+
+  //Nav
+  .Nav {
+    position: fixed;
+    width: 100%;
+    height: 60px; //Story의 마진탑과 같아야됨.
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+    border-bottom: rgb(187, 187, 187) 0.5px solid;
+    top: 110px;
+    //NavLeft(텍스트로 위스타 로고)
+    .NavLeft {
+      font-size: 35px;
+      font-family: 'Satisfy', cursive;
+      margin-right: 15px; //로고에 margin 준 이유 : nav에 space-around 속성 걸었는데, input창을 가운데로 두려고
+      margin-left: 15px;
+    }
+    //NavInput
+    .NavInput {
+      width: 200px;
+      height: 40px;
+      border: gray 0.5px solid;
+      border-radius: 4px;
+      background-color: ghostwhite;
+      padding-left: 100px;
+      font-size: 20px;
+    }
+    //NavRight
+    .NavRight {
+      .NavRightImg {
+        width: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  //MainWithoutNav
+  .MainWithoutNav {
+    border: none;
+    // margin-top: 0px; //내 Nav의 높이만큼 아래로 내려주기위해서 MainWithoutNav에다가 마진을 준거임.
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    // height: 1300px;
+
+    @include backgroundColor;
+
+    //MainLeft
+    .MainLeft {
+      border: none;
+      @include mainLeftWidth;
+
+      //Story
+      .Story {
+        border: rgb(227, 227, 227) 1px solid;
+        height: 100px;
+        border-radius: 7px;
+        margin-bottom: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: white;
+
+        .eachStory {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .storyPhoto {
+            width: 60px;
+            height: 60px;
+
+            font-size: 14px;
+          }
+        }
+      }
+
+      //Feed
+      .Feed {
+        border: 1px rgb(219, 219, 219) solid;
+        border-radius: 7px;
+        background-color: white;
+        margin-bottom: 40px;
+        .IdBox {
+          height: 60px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: white;
+          border-radius: 7px;
+
+          .IdBoxLeft {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            .profilePhotoOnFeed {
+              width: 50px;
+              height: 50px;
+              border-radius: 30px;
+            }
+
+            .IdArea {
+              font-size: 18px;
+              font-weight: 700;
+              padding-left: 9px;
+            }
+          }
+          .dot3 {
+            width: 20px;
+            margin-right: 10px;
+          }
+        }
+
+        .PhotoBox {
+          width: 470px;
+          height: 470px;
+
+          .feedImg {
+            width: 469px;
+            height: 469px;
+          }
+        }
+        //라이크박스
+        .LikeBox {
+          background-color: white;
+          display: flex;
+          justify-content: space-between;
+          padding-left: 9px;
+          padding-right: 10px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          .feedIcon {
+            width: 30px;
+            height: 30px;
+          }
+        }
+
+        //NumberOfLike
+        .NumberOfLike {
+          background-color: white;
+          font-size: 16px;
+          font-weight: 600;
+          padding-left: 4px;
+        }
+
+        //discribeBox
+        .discribeBox {
+          padding-top: 8px;
+          padding-left: 4px;
+          background-color: white;
+          padding-bottom: 7px;
+
+          .discribeBoxId {
+            font-weight: 900;
+          }
+        }
+        //CommentBox
+        .CommentBox {
+          padding-left: 6px;
+          .commentLine {
+            display: flex;
+            align-items: center;
+
+            //commentBoxId
+            .commentBoxId {
+              font-weight: 800;
+            }
+            //commentValue
+            .commentValue {
+              width: 280px;
+            }
+            //commentIMG
+            .commentIMG {
+              width: 20px;
+            }
+          }
+        }
+        //postedOneDayAgo
+        .postedOneDayAgo {
+          padding: 5px;
+          background-color: white;
+          border-bottom: 1px solid rgb(217, 217, 217);
+          padding-top: 8px;
+          padding-bottom: 10px;
+          .left {
+            color: gray;
+            font-size: 13px;
+            margin-right: 8px;
+            padding-left: 7px;
+          }
+
+          .right {
+            color: rgb(61, 61, 61);
+            font-size: 13px;
+          }
+        }
+
+        //inputLine
+        .inputLine {
+          background-color: white;
+          display: flex;
+          align-items: center;
+          padding-top: 5px;
+          padding-bottom: 10px;
+          border: none;
+          border-radius: 8px;
+
+          .emoji {
+            width: 40px;
+            padding-left: 8px;
+          }
+
+          .inputAndButtonForm {
+            .commentInput {
+              padding-left: 10px;
+              width: 380px;
+              font-size: 17px;
+              border: none;
+            }
+            .commentInput:focus {
+              outline: none;
+            }
+
+            .commentButton {
+              margin-right: 13px;
+              color: #0095f6;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              background-color: transparent;
+              border: none;
+              font-weight: 700;
+              font-size: 15px;
+              cursor: pointer;
+              margin-right: 0px;
+            }
+            .commentButton:disabled {
+              cursor: default;
+              margin-right: 13px;
+              color: #b1d7ef;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              background-color: transparent;
+              border: none;
+              font-weight: 700;
+              font-size: 15px;
+              cursor: default;
+              margin-right: 0px;
+            }
+          }
+        }
+      }
+    }
+
+    //MainRight
+    .MainRight {
+      width: 350px;
+      height: 450px;
+      // border: 2px solid blue;
+      margin-left: 30px;
+
+      //AsideTop
+      .AsideTop {
+        // border: 1px red solid;
+
+        .AsideTop1 {
+          display: flex;
+          align-items: center;
+          .mypic {
+            width: 60px;
+            margin-right: 20px;
+          }
+
+          .center {
+            width: 230px;
+            font-size: 16px;
+
+            .top {
+              font-weight: 700;
+              margin-bottom: 4px;
+            }
+            .bot {
+              color: gray;
+            }
+          }
+          .idSwitch {
+            color: #2d9ce1;
+            cursor: default;
+            font-weight: 700;
+            margin-right: 0px;
+            margin-left: 6px;
+            cursor: pointer;
+          }
+        }
+
+        .AsideTop2 {
+          display: flex;
+          justify-content: space-between;
+          font-size: 14px;
+          margin-top: 15px;
+          .top {
+            color: gray;
+            font-weight: 600;
+          }
+          .bot {
+            font-weight: 700;
+            cursor: pointer;
+          }
+        }
+
+        .RecommendBox {
+          margin-top: 10px;
+          .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            .rian {
+              width: 45px;
+              height: 45px;
+            }
+
+            .middle {
+              width: 230px;
+              font-size: 14px;
+              .name {
+                font-weight: 700;
+              }
+              .name2 {
+                color: gray;
+              }
+            }
+
+            .follow {
+              color: #2d9ce1;
+              cursor: pointer;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      //AsideBottom
+      .AsideBottom {
+        // border: 1px green solid;
+        .container {
+          padding: 10px;
+          font-weight: 400;
+          font-size: 14px;
+          .item {
+            color: rgb(180, 180, 180);
+            cursor: pointer;
+          }
+          .item:hover {
+            text-decoration-line: underline;
+          }
+        }
+      }
+    }
+  }
+}
