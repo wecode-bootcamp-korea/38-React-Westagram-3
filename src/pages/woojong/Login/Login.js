@@ -1,9 +1,10 @@
+import userEvent from '@testing-library/user-event';
 import React, { useEffect, useState } from 'react';
 import './Login.scss';
 
 const User = {
-  email: 'test@example.com',
-  pw: 'test2323@@@',
+  email: 'tes2323t@example.com',
+  pw: 'test23323#@@@@',
 };
 
 function Login() {
@@ -38,11 +39,28 @@ function Login() {
   };
 
   const onClickConfirmButton = () => {
-    if (email === User.email && pw === User.pw) {
-      alert('로그인에 성공했습니다.');
-    } else {
-      alert('등록되지 않은 회원입니다.');
-    }
+    // if (email === User.email && pw === User.pw) {
+    //   alert('로그인에 성공했습니다.');
+    // } else {
+    //   alert('등록되지 않은 회원입니다.');
+    // }
+    fetch('http://10.58.52.248:3000/user/signin', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json;charset=utf-8' },
+      body: JSON.stringify({
+        email: email,
+        password: pw,
+      }),
+    })
+      .then(response => response.json())
+      .then(data => {
+        // if (email === User.email && pw === User.pw) {
+        //   alert('로그인에 성공했습니다.');
+        // } else {
+        //   alert('아이디와 비밀번호를 확인해주세요.');
+        // }
+        localStorage.setItem('token', data.accessToken);
+      });
   };
 
   useEffect(() => {
@@ -98,5 +116,4 @@ function Login() {
     </div>
   );
 }
-
 export default Login;

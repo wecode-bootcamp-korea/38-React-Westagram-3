@@ -13,7 +13,7 @@ import TeamNav from './components/Nav/TeamNav.js';
 function Router() {
   return (
     <BrowserRouter>
-      <TeamNav />
+      {/* <TeamNav /> */}
       <Routes>
         <Route path="/doyoung" element={<MainDoyoung />} />
         <Route path="/doyoung/login" element={<LoginDoyoung />} />
