@@ -41,8 +41,7 @@ function LoginInput() {
       })
       .then(res => {
         localStorage.setItem('TOKEN', res.accessToken);
-      })
-      .then(console.log(localStorage.getItem('TOKEN')));
+      });
   }
   function signUp() {
     fetch('http://10.58.52.135:3000/auth/signup', {
