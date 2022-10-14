@@ -121,7 +121,7 @@ const Main = () => {
               </div>
             </div>
             <div className="comment_result" />
-            <div className="feed_comments_write">
+            <form className="feed_comments_write">
               <input
                 className="feed_comments_write_box"
                 placeholder="    댓글 달기..."
@@ -130,7 +130,7 @@ const Main = () => {
               <button className="comment_upload">
                 <b className="makeIdBold">게시</b>
               </button>
-            </div>
+            </form>
           </article>
         </div>
 
