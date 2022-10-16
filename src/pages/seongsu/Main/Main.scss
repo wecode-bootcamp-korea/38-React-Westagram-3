@@ -1,0 +1,896 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 110px;
+  width: 100vw;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(219, 219, 219);
+
+  .logosize {
+    width: 278px;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(219, 219, 219);
+
+    .logosize {
+      width: 278px;
+    }
+
+    input {
+      width: 270px;
+      height: 36px;
+      background-color: rgb(239, 239, 239);
+      border-radius: 8px;
+      border: none;
+    }
+
+    #dropMenu {
+      position: absolute;
+      right: 230px;
+      width: 230px;
+      background-color: white;
+      border-radius: 8px;
+      border: 1px solid rgb(219, 219, 219);
+
+      li {
+        display: flex;
+        align-items: center;
+        height: 37px;
+        padding-left: 10px;
+
+        a {
+          padding-left: 10px;
+        }
+        &:last-child {
+          border-top: 1px solid rgb(219, 219, 219);
+        }
+      }
+    }
+
+    #searchBar {
+      position: absolute;
+      top: 44px;
+      width: 200px;
+      background-color: white;
+      border-radius: 8px;
+      border: 1px solid rgb(219, 219, 219);
+      li {
+        margin-top: 10px;
+        span {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    #itembox {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 278px;
+      height: 60px;
+
+      .homeIcon {
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        background-image: url('https://cdn-icons-png.flaticon.com/512/61/61972.png');
+        background-size: cover;
+      }
+
+      .addIcon {
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        background-image: url('https://cdn-icons-png.flaticon.com/512/875/875068.png');
+        background-size: cover;
+      }
+
+      .compassIcon {
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        background-image: url('https://cdn-icons-png.flaticon.com/512/795/795653.png');
+        background-size: cover;
+      }
+    }
+  }
+  .heartIcon {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/1077/1077035.png');
+    background-size: cover;
+  }
+  .dmIcon {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/786/786205.png');
+    background-size: cover;
+  }
+
+  .userIcon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-image: url(./../../../assets/seongsu/photo.jpeg);
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: -23px -41px;
+  }
+
+  .mainAndAside {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: baseline;
+
+    main {
+      width: 470px;
+
+      .storybox {
+        width: 470px;
+        height: 120px;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        margin-top: 15px;
+
+        .story {
+          width: 470px;
+          height: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          position: relative;
+          top: -50px;
+        }
+      }
+    }
+
+    .box {
+      background-color: rgb(255, 255, 255);
+      border: 1px solid rgb(219, 219, 219);
+      border-radius: 8px;
+    }
+    .articlebox {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 472px;
+      padding-bottom: 10px;
+      margin-top: 15px;
+      .commentbox {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-left: 10px;
+      }
+
+      .commentstool {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 15px;
+        border-top: 1px solid rgb(219, 219, 219);
+
+        input {
+          width: 380px;
+          border: none;
+        }
+      }
+      #articlename {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 470px;
+        height: 56px;
+        .name {
+          display: inline-block;
+          width: 368px;
+        }
+        .menu {
+          position: relative;
+          top: 11px;
+          li {
+            width: 32px;
+            .userIcon {
+              position: relative;
+              bottom: 10px;
+            }
+          }
+        }
+      }
+      .photo {
+        display: inline-block;
+        width: 470px;
+        height: 470px;
+        background-image: url(./../../../assets/seongsu/2E4A9182-12C7-473F-BC12-128A308A9FC2_1_105_c.jpeg);
+        background-size: cover;
+        overflow: hidden;
+      }
+
+      .toolbox {
+        height: 46px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        .commentsIcon {
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          background-image: url('https://cdn-icons-png.flaticon.com/512/3114/3114810.png');
+          background-size: cover;
+        }
+      }
+    }
+
+    .commentbox {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      padding-left: 10px;
+      #commentlist {
+        li {
+          display: flex;
+          justify-content: space-between;
+          div:last-child {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .commentstool {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 15px;
+      border-top: 1px solid rgb(219, 219, 219);
+
+      input {
+        width: 380px;
+        border: none;
+      }
+    }
+    aside {
+      width: 320px;
+      margin-top: 15px;
+      margin-left: 15px;
+      .recommenduser {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        div {
+          width: 200px;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      #recommendMenu {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .scrapIcon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/5662/5662990.png');
+    background-size: cover;
+  }
+  .fullHeart {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/833/833472.png');
+    background-size: cover;
+  }
+
+  .fullHeartSmall {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/833/833472.png');
+    background-size: cover;
+  }
+
+  .moreIcon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3018/3018442.png');
+    background-size: cover;
+  }
+
+  .position {
+    position: relative;
+    left: -26px;
+  }
+
+  .likebox span {
+    margin-right: 10px;
+  }
+
+  .bigUserIcon {
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: -23px -41px;
+  }
+
+  .bluefont {
+    color: #0095f6;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .storyIcon {
+    display: inline-block;
+    position: relative;
+    top: 67px;
+    right: 5px;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-image: url(./../../../assets/seongsu/TJztmXpWTmS.png);
+    background-position: -305px -66px;
+  }
+
+  .smileIcon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3404/3404134.png');
+    background-size: cover;
+  }
+
+  #commentbtn {
+    border: 0px;
+    background-color: white;
+  }
+
+  .greyFont {
+    color: #8e8e8e;
+  }
+
+  .boldWeight {
+    font-weight: 700;
+  }
+
+  .fontSmall {
+    font-size: 13px;
+  }
+
+  .logosize > h1 {
+    font-family: 'Lobster', cursive;
+  }
+
+  .emptyHeart {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/1077/1077035.png');
+    background-size: cover;
+  }
+
+  .commentmargin {
+    display: inline-block;
+    width: 300px;
+  }
+
+  .displaynone {
+    display: none;
+  }
+
+  .profileIcon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/552/552848.png');
+    background-size: cover;
+  }
+
+  .settingIcon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/2040/2040504.png');
+    background-size: cover;
+  }
+
+  .removeBtn {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/657/657059.png');
+    background-size: cover;
+  }
+  .Img {
+    background-image: url(./../../../assets/seongsu/photo.jpeg);
+  }
+  .userImg {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3135/3135715.png');
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  .positionRight {
+    position: relative;
+    left: 150px;
+  }
+
+  .zindex {
+    z-index: 100;
+  }
+  .recommendIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-position: cover;
+  }
+
+  @media (max-width: 830px) {
+    aside {
+      display: none;
+    }
+    .logosize > h1 {
+      font-size: 18px;
+    }
+  }
+
+  input {
+    width: 270px;
+    height: 36px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 8px;
+    border: none;
+  }
+
+  #dropMenu {
+    position: absolute;
+    right: 230px;
+    width: 230px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid rgb(219, 219, 219);
+
+    li {
+      display: flex;
+      align-items: center;
+      height: 37px;
+      padding-left: 10px;
+
+      a {
+        color: black;
+        text-decoration: none;
+        padding-left: 10px;
+      }
+      &:last-child {
+        border-top: 1px solid rgb(219, 219, 219);
+      }
+    }
+  }
+
+  #searchBar {
+    position: absolute;
+    top: 44px;
+    width: 200px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid rgb(219, 219, 219);
+    li {
+      margin-top: 10px;
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  #itembox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 278px;
+    height: 60px;
+
+    .homeIcon {
+      display: inline-block;
+      width: 23px;
+      height: 23px;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/61/61972.png');
+      background-size: cover;
+    }
+
+    .addIcon {
+      display: inline-block;
+      width: 23px;
+      height: 23px;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/875/875068.png');
+      background-size: cover;
+    }
+
+    .compassIcon {
+      display: inline-block;
+      width: 23px;
+      height: 23px;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/795/795653.png');
+      background-size: cover;
+    }
+  }
+}
+.heartIcon {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/1077/1077035.png');
+  background-size: cover;
+}
+.dmIcon {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/786/786205.png');
+  background-size: cover;
+}
+
+.userIcon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: -23px -41px;
+}
+
+.mainAndAside {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  align-items: baseline;
+
+  main {
+    width: 470px;
+
+    .storybox {
+      width: 470px;
+      height: 120px;
+      display: flex;
+      padding: 20px;
+      justify-content: space-between;
+      margin-top: 15px;
+
+      .story {
+        width: 470px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        top: -50px;
+      }
+    }
+  }
+
+  .box {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 8px;
+  }
+  .articlebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 472px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    .commentbox {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      padding-left: 10px;
+    }
+
+    .commentstool {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 15px;
+      border-top: 1px solid rgb(219, 219, 219);
+
+      input {
+        width: 380px;
+        border: none;
+      }
+    }
+    #articlename {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 470px;
+      height: 56px;
+      .name {
+        display: inline-block;
+        width: 368px;
+      }
+      .menu {
+        position: relative;
+        top: 11px;
+        li {
+          width: 32px;
+          .userIcon {
+            position: relative;
+            bottom: 10px;
+          }
+        }
+      }
+    }
+    .photo {
+      display: inline-block;
+      width: 470px;
+      height: 470px;
+      background-size: cover;
+      overflow: hidden;
+    }
+
+    .toolbox {
+      height: 46px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      .commentsIcon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url('https://cdn-icons-png.flaticon.com/512/3114/3114810.png');
+        background-size: cover;
+      }
+    }
+  }
+
+  .commentbox {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 10px;
+    #commentlist {
+      li {
+        display: flex;
+        justify-content: space-between;
+        div:last-child {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .commentstool {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    border-top: 1px solid rgb(219, 219, 219);
+
+    input {
+      width: 380px;
+      border: none;
+    }
+  }
+  aside {
+    width: 320px;
+    margin-top: 15px;
+    margin-left: 15px;
+    .recommenduser {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      div {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    #recommendMenu {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+.scrapIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/5662/5662990.png');
+  background-size: cover;
+}
+.fullHeart {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/833/833472.png');
+  background-size: cover;
+}
+
+.fullHeartSmall {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/833/833472.png');
+  background-size: cover;
+}
+
+.moreIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/3018/3018442.png');
+  background-size: cover;
+}
+
+.position {
+  position: relative;
+  left: -26px;
+}
+
+.likebox span {
+  margin-right: 10px;
+}
+
+.bigUserIcon {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: -23px -41px;
+}
+
+.bluefont {
+  color: #0095f6;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.storyIcon {
+  display: inline-block;
+  position: relative;
+  top: 67px;
+  right: 5px;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-image: url(./../../../assets/seongsu/TJztmXpWTmS.png);
+  background-position: -305px -66px;
+}
+
+.smileIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/3404/3404134.png');
+  background-size: cover;
+}
+
+#commentbtn {
+  border: 0px;
+  background-color: white;
+}
+
+.greyFont {
+  color: #8e8e8e;
+}
+
+.boldWeight {
+  font-weight: 700;
+}
+
+.fontSmall {
+  font-size: 13px;
+}
+
+.logosize > h1 {
+  font-family: 'Lobster', cursive;
+}
+
+.emptyHeart {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/1077/1077035.png');
+  background-size: cover;
+}
+
+.commentmargin {
+  display: inline-block;
+  width: 300px;
+}
+
+.displaynone {
+  display: none;
+}
+
+.profileIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/552/552848.png');
+  background-size: cover;
+}
+
+.settingIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/2040/2040504.png');
+  background-size: cover;
+}
+
+.removeBtn {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  margin-bottom: 1px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/657/657059.png');
+  background-size: cover;
+}
+.Img {
+  background-image: url(./../../../assets/seongsu/photo.jpeg);
+}
+.userImg {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/3135/3135715.png');
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.positionRight {
+  position: relative;
+  left: 150px;
+}
+
+.zindex {
+  z-index: 100;
+}
+.recommendIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-position: cover;
+}
+
+@media (max-width: 830px) {
+  aside {
+    display: none;
+  }
+  .logosize > h1 {
+    font-size: 18px;
+  }
+}
