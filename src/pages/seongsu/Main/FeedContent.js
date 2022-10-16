@@ -5,7 +5,6 @@ function FeedComment({ userName, userImg, like, articlePhoto, content }) {
   const [commentsValue, setCommentsValue] = useState('');
   const [commentsArr, setCommentsArr] = useState([]);
 
-  // let comments = [...commentsArr];
   function onChange(event) {
     setCommentsValue(event.target.value);
   }
