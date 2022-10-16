@@ -1,6 +1,6 @@
 import React from 'react';
 
-let RECOMMEND_DATA = [
+const RECOMMEND_DATA = [
   {
     id: 'Sonny123',
     img: 'https://image.shutterstock.com/image-photo/handsome-unshaven-young-darkskinned-male-600w-640011838.jpg',

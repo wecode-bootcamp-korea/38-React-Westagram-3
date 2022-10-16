@@ -5,38 +5,37 @@ function FeedComment({ userName, userImg, like, articlePhoto, content }) {
   const [commentsValue, setCommentsValue] = useState('');
   const [commentsArr, setCommentsArr] = useState([]);
 
-  let comments = [...commentsArr];
+  // let comments = [...commentsArr];
   function onChange(event) {
     setCommentsValue(event.target.value);
   }
 
   function onSubmit(event) {
     event.preventDefault();
-    comments = [
-      ...comments,
+    setCommentsArr([
+      ...commentsArr,
       {
         id: `${Date.now()}`,
         text: `${commentsValue}`,
         like: false,
       },
-    ];
-    setCommentsArr(comments);
+    ]);
     setCommentsValue('');
   }
 
   function clickDelete(event) {
-    comments = comments.filter(item => item.id != event.target.id);
-    setCommentsArr(comments);
+    setCommentsArr(commentsArr.filter(item => item.id != event.target.id));
   }
 
   function clickLike(event) {
-    comments = comments.map(item => {
-      if (item.id == event.target.id) {
-        return { ...item, like: !item.like };
-      }
-      return item;
-    });
-    setCommentsArr(comments);
+    setCommentsArr(
+      commentsArr.map(item => {
+        if (item.id == event.target.id) {
+          return { ...item, like: !item.like };
+        }
+        return item;
+      })
+    );
   }
 
   return (
@@ -67,7 +66,7 @@ function FeedComment({ userName, userImg, like, articlePhoto, content }) {
         </div>
         <div>
           <ul id="commentlist">
-            {comments.map((el, index) => (
+            {commentsArr.map((el, index) => (
               <Comments
                 key={index}
                 text={el.text}
